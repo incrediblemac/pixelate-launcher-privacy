@@ -1,6 +1,6 @@
 # Privacy Policy — Pixelate Launcher
 
-**Last updated: September 16, 2026**
+**Last updated: September 17, 2026**
 
 This privacy policy applies to **Pixelate Launcher** (package `com.pixelate.launcher`), an Android home-screen app ("the app", "we", "us").
 
@@ -12,9 +12,9 @@ Pixelate Launcher works almost entirely on your device. It has **no accounts, no
 
 The app saves the following in its private storage on your phone. It is never uploaded to us:
 
-- Your settings (grid size, themed icons, notification dots, drawer blur).
-- The apps you pinned to the home screen and dock, and their order.
-- The IDs of widgets you added to the home screen.
+- Your settings (grid size, icon shape, label options, dock options, themed icons, notification dots, drawer blur, temperature unit, what tapping the weather does, double-tap to lock).
+- The apps and app shortcuts you placed on the home screen and dock, and their positions.
+- The IDs, positions and sizes of widgets you added to the home screen.
 - How many times you opened each app from the launcher, used to show "suggested apps" in the app drawer.
 - The last weather result (temperature, condition, time), so weather shows while offline.
 - Whether you have already been asked for location access or shown the accessibility tip.
@@ -27,8 +27,9 @@ The app saves the following in its private storage on your phone. It is never up
 - **Request app uninstall** (`REQUEST_DELETE_PACKAGES`) — lets you start uninstalling an app from its menu. Android always asks you to confirm.
 - **Expand status bar** (`EXPAND_STATUS_BAR`) — lets a swipe down on the home screen open the notification shade.
 - **Notification access** — *optional, off by default*. If you enable it, the launcher checks **which apps** currently have notifications so it can show notification dots. It does **not** read, store or send notification content. You can turn it off in Settings → Notifications → Device & app notifications.
-- **Accessibility service ("Pixelate Launcher gestures")** — *optional, off by default*. Offered only on devices that block launchers from opening the notification shade. Its only function is to open the notification shade when you swipe down. It does **not** read screen content, observe what you type, or collect any data. You can turn it off in Settings → Accessibility.
+- **Accessibility service ("Pixelate Launcher gestures")** — *optional, off by default*. It is used for exactly two actions you trigger on the home screen: **locking the screen when you double-tap** an empty spot, and **opening the notification shade when you swipe down** (on devices that block launchers from doing this directly). It does **not** read screen content, observe what you type, or collect any data. You can turn it off in Settings → Accessibility, and double-tap to lock can be switched off in the launcher's menu.
 - **Widgets** — if you add a widget, Android asks you to allow the launcher to display it. The widget's content comes from the app that provides the widget.
+- **App shortcuts** — as your home app, the launcher can show an app's shortcuts (for example "New chat") in its long-press menu and pin the ones you drag to the home screen. This uses Android's standard shortcut access for home apps; shortcut names and icons stay on your device.
 - **Work profile** — if your device has a work profile, its apps are shown with a badge. No work data is accessed beyond the app list Android provides to launchers.
 
 ## Network requests
