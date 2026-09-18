@@ -1,6 +1,6 @@
 # Privacy Policy — Pixelate Launcher
 
-**Last updated: September 17, 2026**
+**Last updated: September 18, 2026**
 
 This privacy policy applies to **Pixelate Launcher** (package `com.pixelate.launcher`), an Android home-screen app ("the app", "we", "us").
 
@@ -22,6 +22,7 @@ The app saves the following in its private storage on your phone. It is never up
 ## Permissions and why we use them
 
 - **Approximate location** (`ACCESS_COARSE_LOCATION`) — *optional*. Used only to show local weather. Before the system asks, the app explains what is sent. If you decline, weather is shown for a default city. You can revoke it any time in Settings → Apps → Pixelate Launcher → Permissions.
+- **Contacts** (`READ_CONTACTS`) — *optional, never requested on its own*. Search in the app drawer can show contacts whose names match what you type. The permission is only asked for when you tap "Search your contacts" in the search results; if you decline, the app stops offering it. Matching contacts (name and photo thumbnail) are looked up on your device while you search, held only in memory to display the results, and are **never stored, uploaded or shared**. Tapping a contact opens it in your contacts app. You can revoke it any time in Settings → Apps → Pixelate Launcher → Permissions.
 - **Internet** (`INTERNET`) — used only for the weather request described below.
 - **See all installed apps** (`QUERY_ALL_PACKAGES`) — required to list your apps in the launcher. The app list stays on your device.
 - **Request app uninstall** (`REQUEST_DELETE_PACKAGES`) — lets you start uninstalling an app from its menu. Android always asks you to confirm.
@@ -44,7 +45,7 @@ Apart from the Open-Meteo weather request, the app contains **no third-party SDK
 
 ## Data shared with others
 
-We do not share or sell any data. When **you** choose to — for example, searching the web, tapping the weather, opening the calendar, Google Lens, voice search, or uninstalling an app — the launcher opens another app on your device, and that app's own privacy policy applies to what you do there.
+We do not share or sell any data. When **you** choose to — for example, searching the web, opening a contact or a settings page from search, tapping the weather, opening the calendar, voice search, or uninstalling an app — the launcher opens another app on your device, and that app's own privacy policy applies to what you do there.
 
 ## Backups
 
@@ -57,7 +58,7 @@ The app allows Android's standard backup. If backup is turned on for your device
 
 ## Security
 
-The weather request uses HTTPS encryption. All other data is kept in the app's private storage, which other apps cannot read.
+The weather request uses HTTPS encryption. Search text, calculator results and contact lookups are processed only on your device (a calculator result is copied to your clipboard only when you tap it). All other data is kept in the app's private storage, which other apps cannot read.
 
 ## Children's privacy
 
@@ -69,6 +70,7 @@ Pixelate Launcher is a general-audience app and is not directed at children unde
 - No advertising or advertising ID.
 - No analytics, tracking, or crash reporting.
 - No reading of notification content or screen content.
+- No uploading, storing or sharing of your contacts — they are only looked up on your device when you search.
 - No selling or sharing of your data.
 - No precise location — only approximate location, rounded to about 1 km, and only if you allow it.
 
@@ -83,4 +85,4 @@ If the app's data practices change, we will update this page and the "Last updat
 
 ---
 
-*Pixelate Launcher is an independent app and is not affiliated with, endorsed by, or sponsored by Google LLC. Android, Google, Google Lens and Pixel are trademarks of Google LLC. Open-Meteo is a trademark of its respective owner.*
+*Pixelate Launcher is an independent app and is not affiliated with, endorsed by, or sponsored by Google LLC. Android, Google and Pixel are trademarks of Google LLC. Open-Meteo is a trademark of its respective owner.*
