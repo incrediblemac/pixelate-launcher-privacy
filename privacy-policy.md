@@ -1,6 +1,6 @@
 # Privacy Policy — Pixelate Launcher
 
-**Last updated: September 18, 2026**
+**Last updated: September 18, 2026 (recent searches)**
 
 This privacy policy applies to **Pixelate Launcher** (package `com.pixelate.launcher`), an Android home-screen app ("the app", "we", "us").
 
@@ -12,9 +12,10 @@ Pixelate Launcher works almost entirely on your device. It has **no accounts, no
 
 The app saves the following in its private storage on your phone. It is never uploaded to us:
 
-- Your settings (grid size, icon shape, label options, dock options, themed icons, notification dots, drawer blur, temperature unit, what tapping the weather does, double-tap to lock).
+- Your settings (grid size, icon shape, label options, dock options, themed icons, notification badges and their style, drawer blur, temperature unit, what tapping the weather does, double-tap to lock).
 - The apps and app shortcuts you placed on the home screen and dock, and their positions.
 - The IDs, positions and sizes of widgets you added to the home screen.
+- Your last 5 app-drawer searches (only searches you acted on), shown as "recent searches" when you tap the empty search box. You can clear them there with "Clear recent searches".
 - How many times you opened each app from the launcher, used to show "suggested apps" in the app drawer.
 - The last weather result (temperature, condition, time), so weather shows while offline.
 - Whether you have already been asked for location access or shown the accessibility tip.
@@ -58,7 +59,7 @@ The app allows Android's standard backup. If backup is turned on for your device
 
 ## Security
 
-The weather request uses HTTPS encryption. Search text, calculator results and contact lookups are processed only on your device (a calculator result is copied to your clipboard only when you tap it). All other data is kept in the app's private storage, which other apps cannot read.
+The weather request uses HTTPS encryption. Search text, calculator and unit-conversion results and contact lookups are processed only on your device (a calculator result is copied to your clipboard only when you tap it). All other data is kept in the app's private storage, which other apps cannot read.
 
 ## Children's privacy
 
