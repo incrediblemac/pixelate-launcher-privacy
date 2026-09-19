@@ -1,6 +1,6 @@
 # Privacy Policy — Pixelate Launcher
 
-**Last updated: September 18, 2026 (recent searches)**
+**Last updated: September 19, 2026 (calendar event, folders, app sorting)**
 
 This privacy policy applies to **Pixelate Launcher** (package `com.pixelate.launcher`), an Android home-screen app ("the app", "we", "us").
 
@@ -12,11 +12,12 @@ Pixelate Launcher works almost entirely on your device. It has **no accounts, no
 
 The app saves the following in its private storage on your phone. It is never uploaded to us:
 
-- Your settings (grid size, icon shape, label options, dock options, themed icons, notification badges and their style, drawer blur, temperature unit, what tapping the weather does, double-tap to lock).
-- The apps and app shortcuts you placed on the home screen and dock, and their positions.
+- Your settings (grid size, icon shape, label options, dock options, themed icons, notification badges and their style, drawer blur, temperature unit, what tapping the weather does, double-tap to lock, app drawer sort order, layout lock, dark text on light wallpapers, whether the date & weather and the next calendar event are shown).
+- The apps and app shortcuts you placed on the home screen and dock, and their positions, including the folders you made (their names and which apps are in them).
 - The IDs, positions and sizes of widgets you added to the home screen.
 - Your last 5 app-drawer searches (only searches you acted on), shown as "recent searches" when you tap the empty search box. You can clear them there with "Clear recent searches".
-- How many times you opened each app from the launcher, used to show "suggested apps" in the app drawer.
+- How many times you opened each app from the launcher, used to show "suggested apps" and the "Most used" sort order in the app drawer.
+- When you last opened each app from the launcher, and when the launcher was first used, so a small dot can mark newly installed apps you haven't opened yet.
 - The last weather result (temperature, condition, time), so weather shows while offline.
 - Whether you have already been asked for location access or shown the accessibility tip.
 
@@ -24,6 +25,7 @@ The app saves the following in its private storage on your phone. It is never up
 
 - **Approximate location** (`ACCESS_COARSE_LOCATION`) — *optional*. Used only to show local weather. Before the system asks, the app explains what is sent. If you decline, weather is shown for a default city. You can revoke it any time in Settings → Apps → Pixelate Launcher → Permissions.
 - **Contacts** (`READ_CONTACTS`) — *optional, never requested on its own*. Search in the app drawer can show contacts whose names match what you type. The permission is only asked for when you tap "Search your contacts" in the search results; if you decline, the app stops offering it. Matching contacts (name and photo thumbnail) are looked up on your device while you search, held only in memory to display the results, and are **never stored, uploaded or shared**. Tapping a contact opens it in your contacts app. You can revoke it any time in Settings → Apps → Pixelate Launcher → Permissions.
+- **Calendar** (`READ_CALENDAR`) — *optional, off by default, never requested on its own*. If you turn on "Next calendar event" in the home-screen menu, the app first explains what it reads, then Android asks for permission. The launcher then reads, on your device, the title and start and end times of your upcoming events (the next 12 hours, from calendars you have set as visible) to show the next one under the date. Event details are held only in memory to display them and are **never stored, uploaded or shared**. Tapping the event opens it in your calendar app. If you decline, the feature stays off. You can turn it off in the menu, or revoke the permission any time in Settings → Apps → Pixelate Launcher → Permissions.
 - **Internet** (`INTERNET`) — used only for the weather request described below.
 - **See all installed apps** (`QUERY_ALL_PACKAGES`) — required to list your apps in the launcher. The app list stays on your device.
 - **Request app uninstall** (`REQUEST_DELETE_PACKAGES`) — lets you start uninstalling an app from its menu. Android always asks you to confirm.
@@ -32,6 +34,7 @@ The app saves the following in its private storage on your phone. It is never up
 - **Accessibility service ("Pixelate Launcher gestures")** — *optional, off by default*. It is used for exactly two actions you trigger on the home screen: **locking the screen when you double-tap** an empty spot, and **opening the notification shade when you swipe down** (on devices that block launchers from doing this directly). It does **not** read screen content, observe what you type, or collect any data. You can turn it off in Settings → Accessibility, and double-tap to lock can be switched off in the launcher's menu.
 - **Widgets** — if you add a widget, Android asks you to allow the launcher to display it. The widget's content comes from the app that provides the widget.
 - **App shortcuts** — as your home app, the launcher can show an app's shortcuts (for example "New chat") in its long-press menu and pin the ones you drag to the home screen. This uses Android's standard shortcut access for home apps; shortcut names and icons stay on your device.
+- **Wallpaper colours** — to pick light or dark text for the home screen, the launcher asks Android whether your wallpaper is light or dark. This happens on your device; the wallpaper image itself is not read or stored.
 - **Work profile** — if your device has a work profile, its apps are shown with a badge. No work data is accessed beyond the app list Android provides to launchers.
 
 ## Network requests
@@ -59,7 +62,7 @@ The app allows Android's standard backup. If backup is turned on for your device
 
 ## Security
 
-The weather request uses HTTPS encryption. Search text, calculator and unit-conversion results and contact lookups are processed only on your device (a calculator result is copied to your clipboard only when you tap it). All other data is kept in the app's private storage, which other apps cannot read.
+The weather request uses HTTPS encryption. Search text, calculator and unit-conversion results, contact lookups and calendar events are processed only on your device (a calculator result is copied to your clipboard only when you tap it). All other data is kept in the app's private storage, which other apps cannot read.
 
 ## Children's privacy
 
@@ -71,7 +74,7 @@ Pixelate Launcher is a general-audience app and is not directed at children unde
 - No advertising or advertising ID.
 - No analytics, tracking, or crash reporting.
 - No reading of notification content or screen content.
-- No uploading, storing or sharing of your contacts — they are only looked up on your device when you search.
+- No uploading, storing or sharing of your contacts or calendar — they are only read on your device, and only if you turn those features on.
 - No selling or sharing of your data.
 - No precise location — only approximate location, rounded to about 1 km, and only if you allow it.
 
